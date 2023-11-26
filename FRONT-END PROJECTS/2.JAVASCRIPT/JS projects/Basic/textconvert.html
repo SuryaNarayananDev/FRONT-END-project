@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center"><center>
+        <p id="text">
+            Not Changed
+        </p></center>
+    </div>
+    <button class="click" onclick="change()">Click</button>
+</body>
+<style>
+    #text{
+        font-size: 50px;
+        color: yellow;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .center{
+        width: 280px;
+        height: 100px;
+        background-color: black;
+        margin-top: 300px;
+        margin-left:600px;
+    }
+    .click{
+        width: 80px;
+        height: 50px;
+        margin-left:700px ;
+        background-color: coral;
+    }
+</style>
+<script>
+    function change(){
+       var para = document.getElementById("text")
+       para.textContent="Changed"
+    }
+</script>
+</html>

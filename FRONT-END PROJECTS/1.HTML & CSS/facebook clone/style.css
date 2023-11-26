@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+
+}
+.header{
+    width: 100%;
+    height: 105px;
+    background-color:#3c5a99;
+}
+.logo{
+    height: 80px;
+    width: 50%;
+    font-size: 50px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 80px;
+    padding-top: 15px;
+    float: left;
+}
+.logindiv{
+    height: 80px;
+    width: 50%;
+    margin-left: 50%;
+    padding-left: 176px;
+    padding-top: 30px;
+    
+}
+.header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.white{
+    color: #fff;
+}
+.loginbutton{
+    background-color:rgb(65, 88, 138);
+    border-color: black;
+    border:2px;
+    color: #fff;
+    
+}
+/*---------------------------------------------*/
+.bodydiv{
+    height: 800px;
+    width: 100%;
+    background-color:#f6f7fa;
+    
+    float: left;
+}
+.leftdiv{
+    width: 50%;
+    height: 80%;
+    float: left;
+    padding-left: 0;
+    padding-top: 40px;
+    margin: 0;
+}
+.mapimg{
+    padding-left: 25px;
+    height: 298px;
+    width: 644px;
+}
+.rightdiv{
+    width: 40%;
+    height: 80%;
+    float: left;
+    margin-left: 7%;
+    padding-top: 20px;
+}
+.contentpara{
+    font-size: 30px;
+    color: rgb(37, 44, 80);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.accslog{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: left;
+}
+span{
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.inputfieldname{
+    height: 45px;
+    width: 245px;
+    border-color: #3c599980;
+    border-style:ridge;
+    border-radius: 5px;
+    
+
+}
+.inputuserid{
+    height: 45px;
+    width: 500px;
+    border-color: #3c599980;
+    border-style:ridge;
+    border-radius: 5px;
+}
+.logininputtable{
+    border-spacing:0 15px;  
+  
+}
+.dobinput{
+    height: 25px;
+    width: 60px;
+}
+.birthtitle{
+ color: #6c6e73;
+ font-size: 30px;
+ 
+}
+.genderlabel{
+    height: 20px;
+    width: 20px;
+    font-size: 25px;
+    
+}
+.personlization{
+    border-spacing: 30px;
+}
+
+.signupbutton{
+    height: 60px;
+    width: 150px;
+    border-radius: 30px;
+    border: 1px;
+    background-color:#62a14f;
+    border-style: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.term{
+    font-size: 12px;
+}
+.tremh{
+    color: #3c5a99;
+    text-decoration: none;
+}

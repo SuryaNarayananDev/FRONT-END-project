@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<style>
+.outtable{
+    border:10px solid black;
+    height:800px;
+    border-style:double;
+    border-color: yellowgreen;
+    margin-top: 50px;
+}
+.bodyout{
+    width: 900px;
+    height: 350px;
+    margin-left: 280px;
+}
+.leftout{
+    height: 350px;
+    width: 300px;
+    background-color: black;
+    float: left;
+}
+.middleout{
+    height: 350px;
+    width: 300px;
+    background-color: yellow;
+    float: left;
+    
+}
+.rightout{
+    height: 350px;
+    width: 300px;
+    background-color: tomato;
+    float: left;
+}
+#guessnum{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+#getnumguess{
+    height: 30px;
+    width: 150px;
+    margin-left: 75px;
+}
+#show{
+    margin: 80px;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    margin-left: 130px;
+}
+#checkbtn{
+    height:50px;
+    width: 100px;
+    margin-left: 105px;
+    border-radius: 25px;
+    background-color:rgb(128, 0, 0);
+    color: yellow;
+}
+#computernum{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+.pcom{
+    font-size: 30px;
+    color: yellow;
+    margin-left: 50px;
+}
+#congrate{
+    height: 100px;
+    width: 400px;
+    background-color: green;
+    margin-left: 530px;
+}
+#congratetext{
+    font-size: 40px;
+    color:white;
+    text-align: center;
+}
+</style>
+<body> 
+
+<div class="outtable">
+ <h1><center>GUESS THE NUMBER<br>GAME</center></h1>
+ <div class="bodyout">
+ <div class="leftout">
+    <p id="guessnum">
+      0
+    </p>
+    <input onkeyup="displayguessnum()" placeholder="     Enter the Number" id="getnumguess">
+ </div>
+ <div class="middleout">
+    <h2 id="show">
+        =
+     </h2>
+      <button onclick="checkwether()" id="checkbtn">Check</button>
+ </div>
+ <div class="rightout">
+    <p id="computernum" >#</p>
+    <p class="pcom">Computer value</p>
+ </div>
+ </div>
+ <div  id="congrate" widht="200px">
+    <p id="congratetext">Status</p>
+</div>
+</div>
+
+</body>
+<script>
+    var displaynum=document.getElementById("guessnum")
+    var enterednum = document.getElementById("getnumguess")
+    var computerdis = document.getElementById("computernum")
+    function displayguessnum()
+    {
+          displaynum.textContent=enterednum.value
+    }
+        var computernum = Math.floor(Math.random() * 10) + 1;
+       
+        console.log(computernum)
+    function checkwether()
+    {
+        var num1 = Number(enterednum.value)
+        
+        if(num1==computernum){
+            console.log("correct")
+            computerdis.textContent=computernum
+            var congrate = document.getElementById("congratetext")
+            congrate.textContent="Congratulations"
+        }
+        else if(num1>10||num1<0){
+            alert('Please enter a number between 1 and 10')
+        }
+        else
+        {
+            console.log("worng")
+            var congrate = document.getElementById("congratetext")
+            congrate.textContent="Worng"
+        }
+    }
+</script>
+</html>

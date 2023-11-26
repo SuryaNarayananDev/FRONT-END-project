@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookRack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>BOOKRack</h1>
+    <div id="container">
+        <div class="book-container">
+            <h2>Zero to One</h2>
+            <h3 >Peter Thiel</h3>
+            <p>Going from zero to one means going from nothing to something. This is the greatest leap possible — greater than going from one to 10 or even from one to 100. To go from zero to one is to conjure something into existence from the dark void of oblivion. This is the essence of true innovation.</p>
+            <button onclick="remove(event)" id="delete">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>The $100 Startup</h2>
+            <h3>Chris Guillebeau</h3>
+            <p>shows you how to lead a life of adventure, meaning and purpose--and earn a good living. Still in his early thirties, Chris has traveled around the world--and yet he's never held a "real job" or earned a regular paycheck.</p>
+            <button onclick="remove(event)" id="delete">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>Think and Grow Rich</h2>
+            <h3 >Napoleon Hill</h3>
+            <p>promoted as a personal development and self-improvement book. He claimed to be inspired by a suggestion from business magnate and later-philanthropist Andrew Carnegie. However there is no evidence that the two ever met.</p>
+            <button onclick="remove(event)" id="delete">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h3 >Robert T. Kiyosaki</h3>
+            <p>It advocates the importance of financial literacy, financial independence and building wealth through investing in assets, real estate investing, starting and owning businesses, as well as increasing one's financial intelligence.</p>
+            <button onclick="remove(event)" id="delete">Delete</button>
+        </div>
+    </div>
+    
+    <div id="overlay"></div>
+    <div id="popup-box">
+        <h4>ADD BOOK DETAILS</h4>
+        <form >
+        <input type="text" id="book-title" placeholder="Enter Book Name.">
+        <input type="text" id="book-author" placeholder="Enter Author Name.">
+        <textarea id="textarea-pop" placeholder="Enter the About book."></textarea>
+        <button onclick="inputsaver(event)" id="create">Create</button><button onclick="cancel()" id="cancel">Cancel</button>
+        </form>
+    </div>
+    <button onclick="popupfun()" id="adder">+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

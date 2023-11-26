@@ -1,0 +1,123 @@
+<html>
+<body>
+    <div id="canvas"><center>
+        <h1 id="text">HELLO</h1></center>
+    </div>
+    <div class="box">
+        <p>Background Colour Editor :</p>
+    <button class="struct1" onclick="colorupdate(1)">Yellow</button>
+    <button class="struct2" onclick="colorupdate(2)">Blue</button>
+    <button class="struct3" onclick="colorupdate(3)">Green</button>
+    <button class="struct4" onclick="colorupdate(4)">Pink</button>
+    </div>
+    <div class="texteditor">
+        <input placeholder="Enter Name or Text" class="barbox" id="input" onkeyup="textupdate()">
+        <p>Text Colour Editor :</p>
+        <button class="struct1" onclick="textcolor(1)">Yellow</button>
+        <button class="struct2" onclick="textcolor(2)">Blue</button>
+        <button class="struct3" onclick="textcolor(3)">Green</button>
+        <button class="struct4" onclick="textcolor(4)">Pink</button>
+    </div>
+</body>
+<style>
+    #text{
+        color: white;
+    }
+.texteditor{
+    margin-top: 30px;
+    margin-left: 35%;
+}
+#canvas{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(100, 55, 55);
+}
+body{
+    margin: 0;
+}
+h1{
+    padding-top: 200px;
+    font-size: 80px;
+}
+.struct1{
+  height: 50px;
+  width: 100px;
+  color: black;
+  background-color: yellow;
+  border-style: none;
+  border-radius: 30px;
+  margin: 10px;
+  
+}
+.struct2{
+  height: 50px;
+  width: 100px;
+  color: black;
+  background-color:rgb(38, 38, 249);
+  border-style: none;
+  border-radius: 30px;
+  margin: 10px;
+}
+.struct3{
+  height: 50px;
+  width: 100px;
+  color: black;
+  background-color: green;
+  border-style: none;
+  border-radius: 30px;
+  margin: 10px;
+}
+.struct4{
+  height: 50px;
+  width: 100px;
+  color: black;
+  background-color:magenta;
+  border-style: none;
+  border-radius: 30px;
+  margin: 10px;
+}
+.box{
+    margin-left: 35%;
+}
+.barbox{
+    height: 50px;
+    width: 500px;
+}
+</style>
+<script>
+    var canvas=document.getElementById("canvas")
+    var text=document.getElementById("text")
+    var input=document.getElementById("input")
+    function colorupdate(x){
+      
+        switch(x){
+            case 1: canvas.style.backgroundColor="yellow"
+            break
+            case 2: canvas.style.backgroundColor="blue"
+            break
+            case 3: canvas.style.backgroundColor="green"
+            break
+            case 4: canvas.style.backgroundColor="magenta"
+            break
+        }
+    }
+    function textupdate()
+    {
+         text.textContent=input.value
+    }
+    function textcolor(c)
+    {
+           switch(c)
+           {
+            case 1: text.style.color="yellow"
+            break
+            case 2: text.style.color="blue"
+            break
+            case 3: text.style.color="green"
+            break
+            case 4: text.style.color="magenta"
+            break
+           }
+    }
+</script>
+</html>
