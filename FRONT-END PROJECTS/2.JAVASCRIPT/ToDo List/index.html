@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+      <h1>ToDo List</h1>
+       <p class="slogan">Opportunities don't happen, you create them.</p>
+    </div>
+    <div id="show">
+        <input onkeyup="adder()" placeholder="Enter......" id="editer">
+        <button onclick="closediv()" id="editerbtn">X</button>
+    </div> 
+    <div class="container">
+        <div class="body">
+            <div class="navbar">
+                <div class="paradiv1">
+                    <p class="para1">Add List On Your Row .</h1>
+                </div>
+                <div class="input"> 
+                    <input id="input">
+                </div>
+                <div class="btn">
+                    <button id="addbtn" onclick="add()">+</button>
+                </div>
+            </div>
+            <div class="heading">
+                <div class="head">
+                    <div class="dissettings">
+                        <p id="head">
+                            Enter Title
+                        </p>
+                    </div>
+                    <div class="container1" onclick="popupint(1)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div> 
+                    <div class="container2" onclick="popupint(2)">
+                        <div class="bar4"></div>
+                        <div class="bar5"></div>
+                        <div class="bar6"></div>
+                    </div> 
+                </div>
+                <div class="quotes">
+                    <p id="quotes">Quotes for you</p> 
+                </div> 
+            </div>
+            <p class="my_List">LISTS</p>
+            <ul id="container">
+                <li>
+                  
+                </li>
+            </ul>    
+        </div>    
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

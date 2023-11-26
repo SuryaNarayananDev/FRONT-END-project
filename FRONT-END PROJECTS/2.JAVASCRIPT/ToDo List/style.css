@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    background-color:#2481A6;
+}
+h1{
+    font-size: 80px;
+    color: #fff;
+    margin-top: 0%;
+    margin-left: 70px;
+}
+.slogan{
+    font-size: 20px;
+    color: orange;
+    margin-top: -50px;
+    margin-left: 60px;
+}
+.header{
+    margin-top: 20px;
+    background-color: #011526;
+    height: 150px;
+    width: 500px;
+    border-radius: 60px;
+    margin-left: 20px;
+}
+#quotes{
+    
+    margin-top: 10px;
+    margin-left: 18px;
+    font-size:45px;
+    color: rgb(52, 52, 40);
+}
+#show{
+    display:none;
+    width: 500px;
+    height: 70px;
+    background-color: burlywood;
+    margin-left: 940px;
+    border-radius: 10px;
+}
+#editer{
+    height: 40px;
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 13px;
+    border-radius: 10px;
+    border-style: none;
+}
+#editerbtn{
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    background-color: red;
+    border-style: none;
+    margin-left: 10px;
+}
+#close{
+    width: 45px;
+    height: 45px;
+    background-color: yellowgreen;
+}
+.body{
+    height: 900px;
+    width: 90%;
+    background-color: #3E434E;
+    margin-top: 20px;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: #959AB4;
+}
+.paradiv1{
+    margin-top: 10px;
+    margin-left: 550px;
+    float: left;
+    color:#011526;
+}
+#input{
+    height: 40px;
+    width: 500px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: none;
+    float: left;
+}
+#addbtn{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+    border-style:double;
+    background-color: #EAA012;
+    border-color: #485953;
+    font-size: 30px;
+}
+.head{
+    height: 100px;
+    width: 50%;
+    background-color:#595959;
+    float: left;
+}
+.quotes{
+    height: 100px;
+    width: 50%;
+    background-color:#737070;
+    margin-left: 50%;
+    margin-top: 0px;
+}
+
+#head{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size:60px;
+    color: #2a2926;
+}
+.dissettings{
+    width: 85%;
+    height: 100%;
+    margin-top: 0;
+    float: left;
+}
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    margin-left: 95%;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 8.7px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -8.7px) rotate(45deg);
+  }
+
+  .bar4, .bar5, .bar6 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    margin-left: 1333px;
+    margin-top: -0px;
+
+  }
+  
+  .change .bar4 {
+    transform: translate(0, 8.7px) rotate(-45deg);
+  }
+  
+  .change .bar5 {opacity: 0;}
+  
+  .change .bar6 {
+    transform: translate(0, -8.7px) rotate(45deg);
+  }
+  .my_List{
+   font-size: 50px;
+   margin-top: 0px;
+   margin-left: 20px;
+   color: rgb(10, 237, 249);
+  }
+  #newlist{
+    height: 30px;
+    width: 97%;
+    background-color: #221b35;
+  }
+  ul {
+    list-style-type: none;
+  }
+  h2{
+    color:none;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left:10px ;
+  }
+  #listofitems{
+    height: 40px;
+    width: 97%;
+    margin-top: 10px;
+    background-color: #73726A;
+    border-radius: 8px;
+   }
+   .forinput{
+    height: 40px;
+    width: 92%;
+    float: left;
+   }
+   .forbtn{
+    height: 40px;   
+   }
+   #remove{
+    font-size: 20px;
+    height: 40px;
+    width: 30px;
+    background-color:azure;
+    border-style: none;
+    margin-left: 5px;
+    float: left;
+   }
